@@ -3,7 +3,7 @@ Homework 5 Assignment for ENGN1931Z
 
 When working with online resources and web services, we will often want to combine several Application Programming Interfaces (APIs) to construct a new tool. In this homework, you will need combine the Census.Gov Geocoding Service with the OpenStates.org API to learn about the recent work of local state senators. 
 
-Note that the [Census Geocoding API](http://www.census.gov/data/developers/data-sets/Geocoding-services.html) is an open public tool that can provide a wealth of information, but therefore can be somewhat slow to respond. Therefore, one challenge will be to define your API calls as much as possible (e.g. by requesting the only appropriate layer).
+Note that the [Census Geocoding API](http://www.census.gov/data/developers/data-sets/Geocoding-services.html) is an open public tool that can provide a wealth of information, but therefore can be somewhat slow to respond. Therefore, one challenge will be to define your API calls as much as possible (e.g. by only requesting the appropriate layer).
 
 In constrast, the [OpenStates.org API](http://sunlightlabs.github.io/openstates-api/index.html) is a private tool which is optimized for specific purposes. Speed will probably not be an issue, but you will need to register for an API key and then map out the necessary requests to use both the [Legislator Search](http://sunlightlabs.github.io/openstates-api/legislators.html#methods/legislator-search) and [Bill Search](http://sunlightlabs.github.io/openstates-api/bills.html#methods/bill-search) methods.
 

@@ -1,10 +1,10 @@
 #Run this script at the end when you are ready to submit your homework to the autograder.
 
-import hw5  # imports your hw5 module
+import hw_querying  # imports your hw5 module
 import requests
 
-submissionFile=open('hw5.py','r')
-postData=hw5.yourSubmission()
+submissionFile=open('hw_querying.py','r')
+postData=hw_querying.yourSubmission()
 
 
 with open('token','a+') as tokenFile:
@@ -19,6 +19,6 @@ if len(token)<6:
 postData["token"]=token
 postData["submission"]=submissionFile.read()
 subResponse=requests.post("https://script.google.com/macros/s/AKfycbyBDf_xQftwKphaD4jFJ9hH0SL7JhnM_jyYNeXUuYugLHlhvU8/exec",data=postData)
-responseFile=open('submissionResponse.txt','w+')
+responseFile=open('submissionResponse.txt','wb+')
 responseFile.write(subResponse.text.encode('utf8'))
-print subResponse.text
+print(subResponse.text)
